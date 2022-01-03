@@ -1,2 +1,281 @@
-body{
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap");
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  font-family: "Roboto Condensed", sans-serif;
+}
+h1,
+h2 {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+header {
+  display: flex;
+  justify-content: center;
+}
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.links-container {
+  display: flex;
+  width: 80%;
+  text-decoration: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.links-container li {
+  list-style-type: none;
+}
+.links-container li a img {
+  width: 30px;
+  height: 30px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 600px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image-container img {
+  max-height: 600px;
+
+  width: auto;
+  border-radius: 40px;
+}
+.image-container {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-container div {
+  width: 100%;
+  height: auto;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.about p {
+  width: 80%;
+  text-align: center;
+}
+.skills-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 300px;
+  align-items: center;
+  justify-content: space-around;
+}
+.skills-container div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 20px;
+}
+
+.skills-container h2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 300px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.projects-container h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  color: white;
+  font-size: 30px;
+}
+
+.projects-container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+.projects-container div a {
+  color: black;
+  text-decoration: none;
+}
+
+.projects-container div a:hover {
+  color: red;
+}
+
+.projects-container div,
+.projects-container h2 {
+  width: 100%;
+  height: 300px;
+}
+
+.education-container {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  height: 300px;
+  justify-content: space-around;
+}
+
+.education-container div,
+.education-container h2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.education-container h2 {
+  background-color: #000000;
+  margin: 0;
+  font-size: 30px;
+  color: white;
+}
+.education-container div {
+  font-size: 20px;
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 300px;
+  justify-content: space-around;
+}
+
+.experience-container div {
+  font-size: 20px;
+}
+.experience-container div,
+.experience-container h2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience-container h2 {
+  background-color: black;
+  color: white;
+  margin: 0;
+  font-size: 30px;
+}
+.languages-container {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  height: 300px;
+  justify-content: space-around;
+}
+
+.languages-container div,
+.languages-container h2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.languages-container h2 {
+  background-color: black;
+  color: white;
+  margin: 0;
+  font-size: 30px;
+}
+
+.languages-container div {
+  font-size: 20px;
+}
+
+.code-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 300px;
+  justify-content: space-around;
+}
+.code-container div,
+.code-container h2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.code-container h2 {
+  background-color: black;
+  color: white;
+  margin: 0;
+  font-size: 30px;
+}
+
+.footer-links-container {
+  display: flex;
+  width: 80%;
+  height: 200px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-links-container li {
+  list-style: none;
+}
+
+.footer-links-container li:hover {
+  opacity: 0.7;
+}
+
+.footer-links-container li a img {
+  width: 100px;
+}
+
+.constants {
+  color: rgb(117, 117, 0);
+}
+
+.year {
+  font-size: 25px;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+
+@media only screen and (max-width: 810px) {
+  .about-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .code-container {
+    flex-direction: column;
+  }
 }
