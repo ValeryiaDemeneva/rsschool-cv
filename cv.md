@@ -58,4 +58,4 @@ PE "Darida", Sales representive (2020-now)
 
 * English - B1
 * German - A1
-* Rusian - Native
+* Rusian - Nativ
