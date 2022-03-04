@@ -4,11 +4,14 @@
 
 
 body {
-  padding: 0px 250px 0px 250px;
+  
   background: url(./assets/background.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
 
+}
+main {
+  position: relative;
 }
 .links-container {
   display: flex;
@@ -21,7 +24,7 @@ body {
 .just-container {
   background-color: rgb(255, 255, 255);
   z-index: 1;
-  
+  width: 748px;
   border: 1px solid #000000;
   margin: 0 auto;
 }
@@ -123,14 +126,14 @@ body {
 }
 .projects-container h2 {
   position: relative;
-  right: 97px;
+  right: 98px;
   background-color: rgb(255, 0, 0);
   border: thick double #000000;
   padding: 0px 11px;
 }
 .education-container h2 {
   position: relative;
-  right: 54px;
+  right: 55px;
   border: thick double #000000;
   background-color: rgb(255, 0, 0);
   padding: 0px 11px;
@@ -147,7 +150,7 @@ body {
   border: thick double #000000;
   background-color: rgb(255, 0, 0);
   padding: 0px 11px;
-  right: 35px;
+  right: 38px;
 }
 .code {
   position: relative;
@@ -174,10 +177,14 @@ body {
 .number {
   position: relative;
   bottom: 95px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
 }
 .mail {
   position: relative;
   bottom: 85px;
+  color:rgb(255, 255, 255); 
+  text-decoration: none;
 }
 .skills-container {
   display: flex;
@@ -213,9 +220,9 @@ body {
   border-left: 2px solid rgb(0, 0, 0);
   height: 550px;
   position: absolute;
-  left: 650px;
-  margin-left: 50px;
-  top: 370px;
+  left: 440px;
+  
+  top: 350px;
 }
 .line1 {
   position: relative;
@@ -227,7 +234,7 @@ body {
   top: -190px;
 }
 pre {
-  background-color: rgba(250, 235, 215, 0.555);
+  background-color: rgba(148, 148, 148, 0.288);
   width: 250px;
   position: relative;
   left: 40px;
@@ -255,4 +262,14 @@ h1 {
   position: relative;
   bottom: 40px;
 }
+a:hover{
+  color: #ff0707;
+  transition: 0.7s;
 
+  
+  
+  }
+.img_link:hover {
+  transform: scale(1.2);
+  
+}
