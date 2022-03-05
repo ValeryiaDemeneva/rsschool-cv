@@ -1,14 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Judson&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Qwigley&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Judson&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Qwigley&display=swap");
 
 body {
-  
   background: url(./assets/background.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
-
 }
 main {
   position: relative;
@@ -80,7 +76,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 .projects-container li {
   list-style-type: none;
@@ -183,7 +178,7 @@ main {
 .mail {
   position: relative;
   bottom: 85px;
-  color:rgb(255, 255, 255); 
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
 .skills-container {
@@ -193,7 +188,6 @@ main {
   position: relative;
   bottom: 53px;
   right: 15px;
-  
 }
 .languages-container {
   display: flex;
@@ -213,7 +207,7 @@ main {
   background-color: red;
   position: relative;
   height: 2px;
-  right: 34px;
+  width: 400px;
   bottom: 10px;
 }
 .vl {
@@ -221,17 +215,26 @@ main {
   height: 550px;
   position: absolute;
   left: 440px;
-  
-  top: 350px;
+
+  top: 390px;
 }
 .line1 {
   position: relative;
   top: -45px;
+  left: 95px;
+  width: 302px;
 }
 
 .line3 {
   position: relative;
   top: -190px;
+  width: 302px;
+  left: 220px;
+}
+.line2 {
+  position: relative;
+  width: 302px;
+  left: 95px;
 }
 pre {
   background-color: rgba(148, 148, 148, 0.288);
@@ -244,10 +247,10 @@ code {
   right: 125px;
   top: 7px;
 }
-.skills-container h2{
+.skills-container h2 {
   color: red;
 }
-#text {
+.text {
   font-family: "Judson";
 }
 h1 {
@@ -258,18 +261,18 @@ h1 {
   position: relative;
   bottom: 50px;
 }
-.about-container center {
+.about-container p {
   position: relative;
   bottom: 40px;
+  text-align: center;
 }
-a:hover{
+a:hover {
   color: #ff0707;
   transition: 0.7s;
-
-  
-  
-  }
+}
 .img_link:hover {
   transform: scale(1.2);
-  
+}
+.footer-links-container img {
+  width:  40px;
 }
