@@ -1,0 +1,693 @@
+@import "nullstyle.scss";
+
+//Шрифты----------------------------------------------------------------------------------------
+
+@font-face {
+  font-family: "Arial_Regular";
+  src: url("../../assets/fonts/ArialMT.eot");
+  src: url("../../assets/fonts/ArialMT.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/ArialMT.woff") format("woff"),
+    url("../../assets/fonts/ArialMT.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Arial_Italic";
+  src: url("../../assets/fonts/Arial-ItalicMT.eot");
+  src: url("../../assets/fonts/Arial-ItalicMT.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../assets/fonts/Arial-ItalicMT.woff") format("woff"),
+    url("../../assets/fonts/Arial-ItalicMT.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Georgia_Regular";
+  src: url("../../assets/fonts/Georgia.eot");
+  src: url("../../assets/fonts/Georgia.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/Georgia.woff") format("woff"),
+    url("../../assets/fonts/Georgia.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Georgia_Italic";
+  src: url("../../assets/fonts/Georgia-Italic.eot");
+  src: url("../../assets/fonts/Georgia-Italic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../assets/fonts/Georgia-Italic.woff") format("woff"),
+    url("../../assets/fonts/Georgia-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Georgia_Bold";
+  src: url("../../assets/fonts/Georgia-Bold.eot");
+  src: url("../../assets/fonts/Georgia-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../assets/fonts/Georgia-Bold.woff") format("woff"),
+    url("../../assets/fonts/Georgia-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+//Шрифты----------------------------------------------------------------------------------------
+
+.display_none {
+  display: none !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.background_none {
+  background-image: none;
+}
+.pets_header {
+  height: 120px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  top: 10px;
+}
+.pets_header__logo {
+  h1 {
+    color: #545454 !important;
+  }
+  p {
+    color: #292929 !important;
+  }
+}
+
+.pets_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: #f6f6f6;
+  height: 1342px;
+  width: 1280px;
+
+  .pets_tittle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: "Georgia_Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #545454;
+    text-align: center;
+    margin-top: 56px;
+    margin-left: 2px;
+  }
+
+  .pets_icons1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    .icon_Katrine {
+      position: relative;
+      left: 15px;
+      cursor: pointer;
+      &:hover {
+        background: #ffffff;
+        input {
+          background: #fddcc4;
+        }
+      }
+
+      img {
+        position: relative;
+        bottom: 20px;
+      }
+      h3 {
+        position: relative;
+        bottom: 10px;
+      }
+    }
+    .icon_Jennifer {
+      &:hover {
+        background: #ffffff;
+        input {
+          background: #fddcc4;
+        }
+      }
+      img {
+        position: relative;
+        bottom: 10px;
+
+        cursor: pointer;
+      }
+      h3 {
+        position: relative;
+        left: 5px;
+        bottom: 10px;
+      }
+      input {
+        position: relative;
+        left: 5px;
+        top: 1px;
+        &:hover {
+          background: #fddcc4;
+        }
+      }
+    }
+    .icon_Woody {
+      &:hover {
+        background: #ffffff;
+        input {
+          background: #fddcc4;
+        }
+      }
+      img {
+        position: relative;
+
+        bottom: 12px;
+        cursor: pointer;
+      }
+      h3 {
+        position: relative;
+        bottom: 10px;
+        right: 5px;
+      }
+      input {
+        position: relative;
+        top: 1px;
+        right: 5px;
+        &:hover {
+          background: #fddcc4;
+        }
+      }
+    }
+
+    .icon_Sophia {
+      position: relative;
+      right: 11px;
+      cursor: pointer;
+      &:hover {
+        background: #ffffff;
+        input {
+          background: #fddcc4;
+        }
+      }
+
+      img {
+        position: relative;
+        bottom: 10px;
+      }
+      h3 {
+        position: relative;
+        bottom: 10px;
+        left: -4px;
+      }
+      input {
+        position: relative;
+        bottom: -1px;
+        right: 4px;
+        &:hover {
+          background: #fddcc4;
+        }
+      }
+    }
+  }
+
+  .pets_icons2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    bottom: 58px;
+    left: 4px;
+    .icon_Timmy {
+      position: relative;
+      right: -9px;
+      top: 9px;
+      cursor: pointer;
+      &:hover {
+        background: #ffffff;
+        input {
+          background: #fddcc4;
+        }
+      }
+      img {
+        position: relative;
+        top: -10px;
+      }
+      h3 {
+        position: relative;
+        top: 2px;
+        left: 2px;
+      }
+      input {
+        position: relative;
+        top: 12px;
+        left: 2px;
+        &:hover {
+          background: #fddcc4;
+        }
+      }
+    }
+    .icon_Charly {
+      position: relative;
+      cursor: pointer;
+      &:hover {
+        background: #ffffff;
+        input {
+          background: #fddcc4;
+        }
+      }
+      img {
+        position: relative;
+        bottom: 10px;
+      }
+      h3 {
+        position: relative;
+        top: 10px;
+        left: 2px;
+      }
+      input {
+        position: relative;
+        top: 21px;
+        left: 1px;
+        &:hover {
+          background: #fddcc4;
+        }
+      }
+    }
+    .icon_Scarlett {
+      position: relative;
+      cursor: pointer;
+      &:hover {
+        background: #ffffff;
+        input {
+          background: #fddcc4;
+        }
+      }
+    }
+  }
+  h3 {
+    position: relative;
+    right: 8px;
+    top: 11px;
+  }
+  img {
+    position: relative;
+    bottom: 10px;
+  }
+  input {
+    position: relative;
+    right: 9px;
+    top: 21px;
+    &:hover {
+      background: #fddcc4;
+    }
+  }
+}
+.icon_Freddie {
+  cursor: pointer;
+  &:hover {
+    background: #ffffff;
+    input {
+      background: #fddcc4;
+    }
+  }
+
+  h3 {
+    position: relative;
+    top: 10px;
+    right: 19px;
+  }
+  input {
+    position: relative;
+    top: 20px;
+    right: 19px;
+    &:hover {
+      background: #fddcc4;
+    }
+  }
+}
+
+.pets_arrows {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 10px;
+  bottom: 56px;
+
+  .style_arrows_before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    width: 52px;
+    height: 52px;
+    border: 2px solid #cdcdcd;
+    font-family: "Georgia_Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #cdcdcd;
+    &:not(:last-child) {
+      margin: 0px 20px 0px 0px;
+    }
+    cursor: not-allowed;
+    pointer-events: all !important;
+  }
+  .style_arrows_active {
+    background: #f1cdb3;
+    border-radius: 100px;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Georgia_Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #292929;
+    margin: 0px 20px 0px 0px;
+  }
+  .style_arrows_after {
+    border: 2px solid #f1cdb3;
+    border-radius: 100px;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Georgia_Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #292929;
+    margin: 0px 20px 0px 0px;
+    cursor: pointer;
+    &:hover {
+      background: #f1cdb3;
+    }
+  }
+}
+.style_icons {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-around;
+  margin: 0 auto;
+  text-align: center;
+  width: 270px;
+  height: 435px;
+  background: #fafafa;
+  h3 {
+    font-family: "Georgia_Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    color: #545454;
+  }
+  input {
+    color: #292929;
+    letter-spacing: 0.06em;
+    font-family: "Georgia_Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    border: #f1cdb3 solid 2px;
+    width: 187px;
+    height: 52px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #fafafa;
+
+    margin-bottom: 30px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.menu_link_pets {
+  color: #545454 !important;
+}
+
+.main_link_color_pets {
+  color: #292929 !important;
+}
+
+@media (max-width: 768px) {
+  .pets_header {
+    position: relative;
+    top: 0px;
+  }
+  .pets_wrapper {
+    .pets_tittle {
+      position: relative;
+      top: -59px;
+    }
+    height: 1733px;
+    width: 768px;
+    .pets_icons1 {
+      .icon_Katrine {
+        position: relative;
+        top: -185px;
+        right: 93px;
+        img {
+          position: relative;
+          top: -19px;
+          left: 79px;
+        }
+        h3 {
+          position: relative;
+          top: -11px;
+          left: 79px;
+        }
+        input {
+          position: relative;
+          top: -1px;
+          left: 79px;
+        }
+      }
+      .icon_Jennifer {
+        position: relative;
+        top: -196px;
+        right: -134px;
+        h3 {
+          position: relative;
+          left: 1px;
+          top: 0px;
+        }
+        input {
+          position: relative;
+          top: 10px;
+          left: 0px;
+        }
+      }
+      .icon_Woody {
+        position: relative;
+        top: 271px;
+        right: 447px;
+        h3 {
+          position: relative;
+          top: -2px;
+          left: 1px;
+        }
+        input {
+          position: relative;
+          top: 8px;
+          left: 1px;
+        }
+      }
+      .icon_Sophia {
+        position: relative;
+        top: 269px;
+        right: 406px;
+        h3 {
+          position: relative;
+          top: 0px;
+          left: 1px;
+        }
+        input {
+          position: relative;
+          top: 10px;
+          left: 0px;
+        }
+      }
+    }
+    .pets_arrows {
+      position: relative;
+      top: 6px;
+      right: 10px;
+    }
+    .pets_icons2 {
+      .icon_Scarlett {
+        display: none;
+      }
+      .icon_Freddie {
+        display: none;
+      }
+      .icon_Timmy {
+        position: relative;
+        top: 191px;
+        right: -32px;
+        h3 {
+          position: relative;
+          top: 0px;
+          left: 2px;
+        }
+        input {
+          position: relative;
+          top: 10px;
+          left: 1px;
+        }
+      }
+      .icon_Charly {
+        position: relative;
+        top: 191px;
+        right: 41px;
+        h3 {
+          position: relative;
+          top: 0px;
+          left: 1px;
+        }
+        input {
+          position: relative;
+          top: 10px;
+          left: 0px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 320px) {
+  .footerPets {
+    position: relative;
+    bottom: 0px !important;
+  }
+  .pets_header {
+    position: relative;
+    top: -30px;
+  }
+  .pets_wrapper {
+    .pets_tittle {
+      position: relative;
+      top: -144px;
+      font-size: 25px;
+    }
+    height: 1649px;
+    width: 320px;
+    .pets_icons1 {
+      .icon_Katrine {
+        position: relative;
+        top: -349px;
+        right: 93px;
+        img {
+          position: relative;
+          top: -19px;
+          left: 11px;
+        }
+        h3 {
+          position: relative;
+          top: -9px;
+          left: 10px;
+        }
+        input {
+          position: relative;
+          top: -1px;
+          left: 10px;
+        }
+      }
+      .icon_Jennifer {
+        position: relative;
+        top: 105px;
+        right: 245px;
+        h3 {
+          position: relative;
+          left: 1px;
+          top: 0px;
+        }
+        input {
+          position: relative;
+          top: 10px;
+          left: 0px;
+        }
+      }
+      .icon_Woody {
+        position: relative;
+        top: 573px;
+        right: 514px;
+        h3 {
+          position: relative;
+          top: -2px;
+          left: 1px;
+        }
+        input {
+          position: relative;
+          top: 8px;
+          left: 1px;
+        }
+      }
+      .icon_Sophia {
+        display: none;
+      }
+    }
+    .pets_arrows {
+      position: relative;
+      top: 92px;
+      left: -1px;
+      margin: 0px;
+      .style_arrows_after {
+        margin: 5px;
+      }
+      .style_arrows_active {
+        margin: 5px;
+      }
+      .style_arrows_before {
+        margin: 5px;
+      }
+    }
+    .pets_icons2 {
+      .icon_Scarlett {
+        display: none;
+      }
+      .icon_Freddie {
+        display: none;
+      }
+      .icon_Timmy {
+        display: none;
+      }
+      .icon_Charly {
+        display: none;
+      }
+    }
+  }
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+.sticky + .content {
+  padding-top: 102px;
+}
